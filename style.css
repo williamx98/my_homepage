@@ -142,7 +142,7 @@ body{
 
 .section-data {
   width: 700px;
-  padding: 5px 50px 0 0;
+  padding: 5px 35px 0 0;
   letter-spacing: 1px;
 }
 
@@ -164,7 +164,7 @@ body{
   border: 0.5vmin solid #404040;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) scale(-1,-1);
   bottom: 5%;
 }
 .scroll:before {
@@ -250,8 +250,22 @@ body{
   padding: 0.4em 0em;
 }
 
+li {
+  margin-top: 10px;
+}
+
 .other-links {
   color: #bbb;
+}
+
+.show-video {
+  height: 300px;
+  transition: height 0.3s ease-out;
+}
+
+.hide-video {
+  height: 0px;
+  transition: height 0.3s ease-out;
 }
 
 @keyframes scroll {
@@ -494,7 +508,9 @@ canvas{
 
 
 @media screen and (max-width: 450px) {
-
+  body{
+    font:normal 75% Helvetica, sans-serif;
+  }
 
   .home-title, .home-hi{
     font-size: 4em;
