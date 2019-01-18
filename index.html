@@ -1,335 +1,390 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+
+<html lang="en" class="full-window">
 <head>
   <meta charset="utf-8">
   <title>William X.</title>
-  <meta name="description" content="Homepage and contact of William X.">
-  <meta name="author" content="William X." />
+  <meta name="description" content="Homepage of Wiliam X.">
+  <meta name="author" content="William X.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" media="screen" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-	<div class="home-container" style="height: 100%; width: 100%;">
-		<div class="home-center-container">
-			<div style="display: flex; flex-direction: row; width: 100%; align-items: center; justify-content: flex-start;">
-				<h1 class="home-hi">Hi</h1>
-				<h1 class="home-wave">👋</h1>
-			</div>
-			<span style="display: flex; flex-direction: row; width: 100%; align-items: center; justify-content: flex-end;"><span class="home-hi" style="margin-right: 10px">I'm</span><span class="home-title">&nbsp;William</span><span class="home-computer">👨🏻‍💻</span></span>
 
-			<span style="margin: 0px 0 20px 3px">
-				<span style=" color:#aaa; font-size: 1.5em; font-family: Helvetica; font-weight: 100; letter-spacing: 0px">A&nbsp;</span>
-				<a href="" class="typewrite" data-period="500" style="text-align: left; color:#aaa; font-size: 1.5em; font-family: Helvetica;     font-weight: 100; letter-spacing: 0px" data-type='[ "visionary", "go-getter", "hustler", "self-starter", "creative", "problem-solver", "grinder", "forward-thinker", ""]'>
-				  <span class="wrap"></span>
-				</a>
-			</span>
+<body class="full-window">
+  <script src="script.js"></script>
 
-			<div class='home-button-container'>
-				<a href="#contact" class="btn draw-border" style="margin-right: 15px;" id="contact-button">contact</a>
-				<a href="#resume" class="btn draw-border" style="margin-left: 15px;" id="resume-button">résumé</a>
+	<div class="full-window title pane" style="margin-top: 0px">
+		<div class="card">
+			<div class="title-font line">
+			  <h1>Hi&nbsp;</h1>
+			  <h1 class="title-emoji wave-animate">👋</h1>
+			</div>
+			<div class="title-font line">	  
+			  <h1>I'm&nbsp;</h1>
+			  <h1 class="title-name">William</h1>
+				<h1>&nbsp;</h1>
+			  <h1 class="title-emoji programmer-animate">👨🏻‍💻</h1>
+			</div>
+			<div class="sub-title-font line">
+				<h1 class="sub-title-font">A
+				  <span class="typer" id="main" data-words="problem-solver,visionary,go-getter,hustler,self-starter,forward-thinker,creative" data-colors="#ccc" data-delay="25" data-deleteDelay="1000"></span>
+				  <span class="cursor" data-cursorDisplay="|" data-owner="main"></span>
+				</h1>
+			</div>
+			<div class="line">
+				<a href="#contact-pane" class="title-button button draw-border">contact</a>
+				<a class="title-button button draw-border" href="#resume-anchor">résumé</a>
 			</div>
 		</div>
-		<a href="#about" class="scroll animated fadeInUp" id="scroll-indicator"></a>
+		<div class="mouse"></div>
+<!-- 		<div class="scroll-indicator">
+			<div class="dots"></div>
+		</div> -->
 	</div>
 
-	<div class='section-container' id='about'>
-		<div class='section-left'>
-			<h1 style="padding-top: 10px;">THINGS ABOUT ME &nbsp;</h1>
-			<h1 class='emoji' style="font-size: 40px;">👨🏻‍💻</h1>
+	<div class="content pane about">
+		<div class="content-left">
+			<div class="header line">
+				<h1>THINGS ABOUT ME&nbsp;</h1>
+				<h1 class="header-emoji">👨🏻‍🎓</h1>
+			</div>
 		</div>
-		<div class='section-right'>
-			<div class='section-data'>
-				<p>I'm currently a student at The University of Texas at Austin studying computer science on an accelerated track allowing me to graduate 1 year early in May of 2020. Recently, I interned as a software engineer at <a href="https://www.trinet.com/" style=""><u>TriNet</u></a> where I built an application that is saving hundreds of hours of manual data-entry for over 16,000 companies by automatically generating expense reports from images of receipts. You can find more details about this project in my resume and on my website.</br></br>I believe technology has a role in every aspect of life and building those connections is my passion. I set myself apart by making it my goal to create solutions that are efficient and effective but still minimal and simple in design and function.</br></br>When I'm not studying, you can find me exploring new places, trying new food, or pushing my limits at the gym.</br></br></p>
+		<div class="content-right">
+			<p>I'm currently a computer science student at The University of Texas at Austin graduating early in May of 2020. Recently, I interned as a software engineer at TriNet where I build an application that is actively saving hundreds of hours of manual data-entry for over 16,000 companies by automatically generating expense reports from images of receipts. </p>
+			</br>
+			<p>I believe technology has a role in every aspect of life and building those connections is my passion. I set myself apart by making it my goal to design solutions that are efficients and effective yet minimal and simple in design and function.</p>
+			</br>
+			<p>When I am not studying, you can find me exploring new places, trying new food, or pushing my limits at the gym.</p>
+			</br>
+			<p>I am also looking for software engineering internships to apply the strong problem solving and analytical skills I gained from previous internships, teaching, and management experiences. My contact information is below at the bottom of the page.</p>
+			</br>
 
-				<p><strong style="color: #666">TO RECRUITERS:</strong> I am looking for a software engineering internship to apply the strong problem solving and analytical skills gained from my previous experience as a software engineering intern and from independently developing 20+ advanced projects. Having an open-minded, self-motivated personality, a proven dedication for computer science, and extensive technical & mathematical abilities make me the ideal intern on any team.
-				</br></br></br></p>
-				<div class="work-container">
-					<div class="work-main">
-						<h1 class="company">B.S, Computer Science</h1>
-						<h1 class="date">August 2017 - May 2020</h1>
+			<div class="item">
+				<div class="item-header line">
+					<h1 class="item-name">B.S, Computer Science</h1>
+					<h1 class="item-detail">August 2017 - May 2020</h1>
+				</div>
+				<h1 class="item-origin">The University of Texas at Austin 🤘</h1>
+				<div class="item-note" style="margin-top: 10px;">
+					<h1 class="item-dot">•&nbsp;</h1>
+					<h1><span class="bold">Coursework - </span>data structures, discrete mathematics, computer architecture, operating systems, competitive programming, differential, integral and multivariable calculus, statistics, linear algebra, engineering physics, accounting, macroeconomics</h1>
+				</div>
+
+				<div class="item-note">
+					<h1 class="item-dot">•&nbsp;</h1>
+					<div class="item-sub-note">
+						<h1><span class="bold">Founder and President</span></h1>
+						<h1 class="item-origin">Texas FIRE: student organization for promoting Financial Intelligence and Responsibility</h1>
+						<div class="item-note" style="margin-top: 5px;">
+							<h1 class="item-dot">◦ &nbsp;</h1>
+							<h1 class="item-note" style="margin-top: 0px">Lead and establish a finance organization to help students raise their financial literacy and to promote financial responsibility.</h1>
+						</div>
 					</div>
-					<h3>The University of Texas at Austin</h3>
-					<ul style="font-family: Cloud; font-size: 1.07em;">
-						<li>• Accelerated degree track for 1-year early graduation.</li>
-						<li>• Courses: data structures, discrete mathematics, computer architecture, differential & integral & multivariable calculus, statistics, linear algebra, engineering physics, accounting, macroeconomics.</li>
-						<li>• <strong>Founder and President</strong> of Texas FIRE (Financial Intelligence and Responsibility)</li>
-						<li>• <strong>Officer and Student Lecturer</strong> of Longhorn Mobile Development</li>
-					</ul>
+				</div>
+
+				<div class="item-note">
+					<h1 class="item-dot">•&nbsp;</h1>
+					<div class="item-sub-note">
+						<h1><span class="bold">Student Officer and Lecturer</span></h1>
+						<h1 class="item-origin">Longhorn Mobile Development: on-campus student-led mobile development organization</h1>
+						<div class="item-note" style="margin-top: 5px;">
+							<h1 class="item-dot">◦ &nbsp;</h1>
+							<h1 class="item-note" style="margin-top: 0px">Perform iOS mobile development lectures and provide mentorship for students across disciplines and varying technical abilities.</h1>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class="content pane">
+		<div class="content-left">
+			<div class="header line">
+				<h1>THINGS I CAN DO&nbsp;</h1>
+				<h1 class="header-emoji">⌨️</h1>
+			</div>
+		</div>
+		<div class="content-right">
+			<div class="skill-container">
+				<div class="skill-subject">
+					<h1 class="bold">PROGRAMMING</h1>
+					<h2>Python</h2>
+					<h2>Java</h2>
+					<h2>C++</h2>
+					<h2>C</h2>
+					<h2>Swift iOS</h2>
+					<h2>JavaScript</h2>
+					<h2>HTML</h2>
+					<h2>CSS & SASS</h2>
+					<h2>PHP</h2>
+				</div>
+				<div class="skill-subject">
+					<h1 class="bold">TOOLS</h1>
+					<h2>React</h2>
+					<h2>React Native</h2>
+					<h2>Node.js</h2>
+					<h2>Xcode</h2>
+					<h2>Google Firebase</h2>
+					<h2>Amazon: AWS</h2>
+					<h2>Parse</h2>
+					<h2>Heroku</h2>
+					<h2>Selenium</h2>
+					<h2>BeautifulSoup</h2>
+					<h2>Git</h2>
+				</div>
+				<div class="skill-subject" style="margin-bottom: 0px">
+					<h1 class="bold">LEISURE</h1>
+					<h2>Trumpet</h2>
+					<h2>Piano</h2>
+					<h2>Ultimate Frisbee</h2>
+					<h2>Fitness</h2>
+				</div>
+				<div class="skill-subject" style="margin-bottom: 0px">
+					<h1 class="bold">INTERESTS</h1>
+					<h2>Finance</h2>
+					<h2>Stock-trading</h2>
+					<h2>3D Design</h2>
+					<h2>3D Printing</h2>
+					<h2>Traveling</h2>
+					<h2>Music</h2>
+					<h2>Research</h2>
+					<h2>Cybersecurity</h2>
+					<h2>Machine Learning</h2>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class='section-container' id="resume">
-		<div class='section-left'>
-			<h1 style="padding-top: 10px;">THINGS I CAN DO &nbsp;</h1>
-			<h1 class='emoji' style="font-size: 40px;">⌨️</h1>
+
+	<div id="resume-anchor"></div>
+	<div class="content pane resume">
+		<div class="content-left">
+			<div class="header line">
+				<h1>RÉSUMÉ&nbsp;</h1>
+				<h1 class="header-emoji">📄</h1>
+			</div>
 		</div>
-		<div class='section-right'>
-			<div class='section-data'>
-				<div class='all-skills'>
-					<div class='skill-container'>
-						<h1>LANGUAGES</h1>
-						<ul style="font-family: Courier">
-							<li>Java</li>
-							<li>Python</li>
-							<li>C/C++</li>
-							<li>Swift</li>
-							<li>JavaScript</li>
-							<li>HTML</li>
-							<li>CSS/SASS</li>
-							<li>PHP</li>
-						</ul>
-					</div>
-					<div class='skill-container'>
-						<h1>TOOLS</h1>
-						<ul style="font-family: Courier">
-							<li>Github</li>
-							<li>Node.js</li>
-							<li>React.js</li>
-							<li>React Native</li>
-							<li>Xcode</li>
-							<li>Amazon: AWS</li>
-							<li>Firebase</li>
-							<li>Parse</li>
-							<li>Heroku</li>
-							<li>Selenium</li>
-							<li>BeautifulSoup</li>
-						</ul>
-					</div>
-					<div class='skill-container'>
-						<h1>OTHERS</h1>
-						<ul style="font-family: Courier">
-							<li>Chinese</li>
-							<li>3D Design</li>
-							<li>3D Printing</li>
-						</ul>
-					</div>
-					<div class='skill-container'>
-						<h1>INTERESTS</h1>
-						<ul style="font-family: Courier">
-							<li>Finance</li>
-							<li>Stock Trading</li>
-							<li>Travel</li>
-							<li>Mobile Dev.</li>
-							<li>Fitness</li>
-							<li>Cybersecurity</li>
-							<li>Machine Learning</li>
-						</ul>
-					</div>
+		<div class="content-right">
+			<a class="resume-button button draw-border" href="resume/index.html" target="_blank">view/save résumé</a>
+		</div>
+	</div>
+
+	<div class="content pane">
+		<div class="content-left">
+			<div class="header line">
+				<h1>THINGS I HAVE DONE&nbsp;</h1>
+				<h1 class="header-emoji">👔</h1>
+			</div>
+		</div>
+		<div class="content-right">
+			<div class="item">
+				<div class="item-header line">
+					<h1 class="item-name">Software Engineering Intern</h1>
+					<h1 class="item-detail">June 2018 – August 2018</h1>
+				</div>
+				<h1 class="item-origin">TriNet: publicly traded cloud-based HR solutions provider</h1>
+				<div class="item-note">
+					<h1 class="item-dot">•&nbsp;</h1>
+					<h1>Saving hundreds of hours of manual data-entry for over 16,000 companies by building an application to automatically generate expense
+reports from images of expense receipts.</h1>
+				</div>
+			</div>
+			</br>
+			<div class="item">
+				<div class="item-header line">
+					<h1 class="item-name">Technical Program Manager</h1>
+					<h1 class="item-detail">August 2018 - Current</h1>
+				</div>
+				<h1 class="item-origin">CodePath: full-stack iOS development course taught at Facebook</h1>
+				<div class="item-note">
+					<h1 class="item-dot">•&nbsp;</h1>
+					<h1>Foster campus-wide mobile development interest by leading and establishing an iOS course to mentor students through the development
+of over 8 iPhone apps across 12 weeks of lectures and lab-based development.</h1>
+				</div>
+			</div>
+			</br>
+			<div class="item">
+				<div class="item-header line">
+					<h1 class="item-name">Web Developer</h1>
+					<h1 class="item-detail">March 2018 – April 2018</h1>
+				</div>
+				<h1 class="item-origin">Darbie Angell: e-commerce platform for modern dinnerware at darbieangell.com</h1>
+				<div class="item-note">
+					<h1 class="item-dot">•&nbsp;</h1>
+					<h1>Upgraded the central homepage using responsive web design concepts, Javascript, HTML, CSS, and Liquid markup.</h1>
+				</div>
+				<div class="item-note">
+					<h1 class="item-dot">•&nbsp;</h1>
+					<h1>Committed to excellent service by providing troubleshooting and support 6 months following initial project completion.</h1>
+				</div>
+			</div>
+			</br>
+			<div class="item">
+				<div class="item-header line">
+					<h1 class="item-name">Warehouse Manager</h1>
+					<h1 class="item-detail">June 2017 – August 2017</h1>
+				</div>
+				<h1 class="item-origin">Hytons: nationwide supplier of industrial restaurant equipment </h1>
+				<div class="item-note">
+					<h1 class="item-dot">•&nbsp;</h1>
+					<h1>Oversaw facility-wide operations and delegated daily tasks to equipment operators and warehouse staff.</h1>
+				</div>
+				<div class="item-note">
+					<h1 class="item-dot">•&nbsp;</h1>
+					<h1>Initiated and performed managerial accounting during the absence of the accountant</h1>
+				</div>
+			</div>
+			</br>
+			<div class="item">
+				<div class="item-header line">
+					<h1 class="item-name">Private Programming & Math Tutor</h1>
+					<h1 class="item-detail">January 2017 – May 2017</h1>
+				</div>
+				<h1 class="item-origin">Walker Station: prestigious PK-5 elementary school in FBISD </h1>
+				<div class="item-note">
+					<h1 class="item-dot">•&nbsp;</h1>
+					<h1>Oversaw facility-wide operations and delegated daily tasks to equipment operators and warehouse staff.</h1>
+				</div>
+				<div class="item-note">
+					<h1 class="item-dot">•&nbsp;</h1>
+					<h1>Initiated and performed managerial accounting during the absence of the accountant</h1>
+				</div>
+			</div>
+			</br>
+			<div class="item">
+				<div class="item-header line">
+					<h1 class="item-name">Hardware & Software Repair Technician</h1>
+					<h1 class="item-detail">June 2014 – August 2014</h1>
+				</div>
+				<h1 class="item-origin">Nupace: device repair for the Brooklyn borough of New York</h1>
+				<div class="item-note">
+					<h1 class="item-dot">•&nbsp;</h1>
+					<h1>Performed technical repair operations such as CPU and GPU reflowing, mobile LCD replacements, virus removal, and data recovery.</h1>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class='section-container' style="padding: 0">
-		<div class='section-left'>
-		</div>
-		<div class='section-right'>
-			<div class='section-data'>
-				<a href="https://willx.org/resume" class="btn draw-border phone">view/save résumé</a>
+
+	<div class="project content pane">
+		<div class="content-left">
+			<div class="header line">
+				<h1>THINGS I HAVE MADE&nbsp;</h1>
+				<h1 class="header-emoji">🛠️</h1>
 			</div>
 		</div>
-	</div>
-	<div class='section-container'>
-		<div class='section-left'>
-			<h1 style="padding-top: 10px;">THINGS I HAVE DONE &nbsp;</h1>
-			<h1 class='emoji' style="font-size: 40px;">👔</h1>
-		</div>
-		<div class='section-right'>
-			<div class='section-data'>
-				<div class="work-container">
-					<div class="work-main">
-						<h1 class="company">Technical Program Manager - <span style="font-weight: 100; font-style: italic">CodePath</span></h1>
-						<h1 class="date">Spring 2019</h1>
-					</div>
-					<h3>A full-stack iOS development course taught at Facebook</h3>
-					<ul style="font-family: Cloud; font-size: 1.07em;">
-						<li>• Fostered campus-wide mobile development interest by establishing an iOS course to mentor students through the development of over 8 iPhone apps across 12 weeks of lectures and lab-based development.</li>
-						<li>• Trained students in connecting with APIs, storyboarding multi-paged apps, incorporating geolocation and camera-access, designing touch-responsive animations, creating clean functional user experiences, and implementing a custom NoSQL backend API service.</li>
-						<li>• Topics: <u>Swift</u>, <u>Xcode</u>, <u>UI Design</u>, <u>REST APIs</u> <u>Alamofire</u>, <u>Parse</u>, <u>Heroku</u>, <u>Github</u>.</li>
-					</ul>
+		<div class="content-right">
+			<div class="item" style="margin-top: 0px">
+				<div class="item-header line">
+					<h1 class="item-name">iPhone Encrypted Storage App</h1>
 				</div>
-				<div class="work-container">
-					<div class="work-main">
-						<h1 class="company">iOS Development - <span style="font-weight: 100; font-style: italic">CodePath</span></h1>
-						<h1 class="date">Fall 2018</h1>
-					</div>
-					<h3>A full-stack iOS development course taught at Facebook</h3>
-					<ul style="font-family: Cloud; font-size: 1.07em;">
-						<li>• Collaborated with a group to develop an original app from scratch</li>
-						<li>• Developed Swift iOS apps using APIs from MovieDB, Yelp, Twitter, and Heroku + Parse.</li>
-						<li>• Took initiative and compeleted 2 months of work in 1 week.</li>
-						<li>• Topics: <u>Swift</u>, <u>Xcode</u>, <u>UI Design</u>, <u>REST APIs</u> <u>Alamofire</u>, <u>Parse</u>, <u>Heroku</u>, <u>Github</u>.</li>
-					</ul>
+				<div class="item-note">
+					<h1>iPhone app developed to encrypt and store text, images and other files using AES encryption and Swift iOS.</h1>
 				</div>
-				<div class="work-container">
-					<div class="work-main">
-						<h1 class="company">Software Engineering Intern - <span style="font-weight: 100; font-style: italic">TriNet</span></h1>
-						<h1 class="date">Summer 2018</h1>
-					</div>
-					<h3>cloud-based HR software solutions provider in Austin, TX</h3>
-					<ul style="font-family: Cloud; font-size: 1.07em;">
-						<li>• Saved countless hours of manual data-entry for over 16,000 companies by building an application to automatically generate expense reports from images of receipts.</li>
-						<li>• Developed a noise reduction algorithm in PHP to filter and extract relevant text from noisy Tesseract Optical-Character-Recognition data.</li>
-						<li>• Accelerated development by writing a batch testing suite which tests the algorithm's accuracy on hundreds of images and data points.</li>
-						<li>• Extensive use of <u>PHP</u>, <u>HTML/CSS</u>, and <u>JavaScript</u>.</li>
-					</ul>
+				<h1 class="item-tags">Swift iOS • data encryption • CocoaPods • Xcode</h1>
+			</div>
+			</br>
+			<div class="item">
+				<div class="item-header line">
+					<h1 class="item-name">Message Bot</h1>
 				</div>
-				<div class="work-container">
-					<div class="work-main">
-						<h1 class="company">Web Developer - <span style="font-weight: 100; font-style: italic">Darbie Angell</span></h1>
-						<h1 class="date">Spring 2018</h1>
-					</div>
-					<h3>e-commerce platform for modern dinnerware at <a href="https://www.darbieangell.com/" style=""><u>darbieangell.com</u></a></h3>
-					<ul style="font-family: Cloud; font-size: 1.07em;">
-						<li>• Exceeded project goals by providing web consulting for the Social Media Director.</li>
-						<li>• Applied responsive web design concepts to upgrade the homepage using Javascript, HTML, CSS, and Liquid markup.</li>
-						<li>• Extensive use of <u>HTML/CSS</u> and <u>JavaScript</u>.</li>
-					</ul>
+				<div class="item-note">
+					<h1>Python bot which increases online audience engagement by over 500% through the automatic delivery of personalized messages.</h1>
 				</div>
-				<div class="work-container">
-					<div class="work-main">
-						<h1 class="company">Warehouse Manager - <span style="font-weight: 100; font-style: italic">Hytons</span></h1>
-						<h1 class="date">Spring 2018</h1>
-					</div>
-					<h3>nationwide supplier of industrial kitchen equipment</h3>
-					<ul style="font-family: Cloud; font-size: 1.07em;">
-						<li>• Oversaw daily operations and delegated tasks to equipment operators and warehouse staff on a daily basis.</li>
-						<li>• Took initiative and provided managerial accounting support in the absence of the accountant.</li>
-					</ul>
+				<h1 class="item-tags">Python • Selenium • BeautifulSoup • JavaScript</h1>
+			</div>
+			</br>
+			<div class="item">
+				<div class="item-header line">
+					<h1 class="item-name">Control Computers With Hand Gestures</h1>
 				</div>
-				<div class="work-container">
-					<div class="work-main">
-						<h1 class="company">Founder, President - <span style="font-weight: 100; font-style: italic">Texas FIRE</span></h1>
-						<h1 class="date">August 2018</h1>
-					</div>
-					<h3>Texas Financial Intelligence and Responsibility was founded to promote financial literacy.</h3>
-					<ul style="font-family: Cloud; font-size: 1.07em;">
-						<li>• Pioneered a student organization aiming to increase financial financial literacy and share knowledge of foundational finance across campus.</li>
-						<li>• Leading an initiative to promote intelligent investing, financial responsibility, and an understanding of the global stock market.</li>
-					</ul>
+				<div class="item-note">
+					<h1>Java program which enables the control of computers through hand gestures that are tracked in real-time by sensors from LEAP motion.</h1>
 				</div>
-				<div class="work-container">
-					<div class="work-main">
-						<h1 class="company">Drum Major - <span style="font-weight: 100; font-style: italic">Stephen F. Austin HS Marching Band</span></h1>
-						<h1 class="date">2015 - 2017</h1>
-					</div>
-					<h3>An extracurricular which combines physical and muscial prowess.</h3>
-					<ul style="font-family: Cloud; font-size: 1.07em;">
-						<li>• Lead and conducted the organization in every competition, performance, and rehearsal.</li>
-						<li>• Developed foundational leaderships skills such as dedication, hardwork, and sacrifice.</li>
-						<li>• Coordinated band as musical conductor for 2 consecutive years.</li>
-						<li>• Achieved state-level ranking during my service as chief student leader.</li>
-						<iframe style="margin-top: 10px" width="75%" height="0px" style="transition: height 0.3s ease-out;" id="youtube" src="https://www.youtube.com/embed/LAT7kntS5gg?rel=0&amp;start=66" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-						<a class="btn draw-border" style="margin-right: 15px; width: 25%;" id="videoControl">Show Video</a>
-					</ul>
+				<h1 class="item-tags">Java • LEAP Motion • cross-platform • gesture-recognition</h1>
+			</div>
+			</br>
+			<div class="item">
+				<div class="item-header line">
+					<h1 class="item-name">Alexa, Teach Me a Language</h1>
+				</div>
+				<div class="item-note">
+					<h1>Amazon Alexa Skill which turns Alexa devices into language learning tools by leveraging Alexa's multi-language voice recognition ability.</h1>
+				</div>
+				<h1 class="item-tags">Amazon Alexa Skill • AWS • voice recognition</h1>
+			</div>
+			</br>
+			<div class="item">
+				<div class="item-header line">
+					<h1 class="item-name">Zero-Cost Automated Stock Trading API </h1>
+				</div>
+				<div class="item-note">
+					<h1>JavaScript API which eliminates overhead costs of automated stock trading by incoporating Robinhood's commission-free trading platform.</h1>
+				</div>
+				<h1 class="item-tags">JavaScript • Robinhood API • automated stock-trading • Node.js</h1>
+			</div>
+			</br>
+			<div class="item">
+				<div class="item-header line">
+					<h1 class="item-name">Full-Stack Desktop and Mobile Snapchat Client</h1>
+				</div>
+				<div class="item-note">
+					<h1>React.js and Google Firebase website designed to send and receive single-view images in real-time for desktop and mobile web clients.</h1>
+				</div>
+				<h1 class="item-tags">React.js • Google Firebase • JavaScript • HTML/CSS • image handling</h1>
+			</div>
+			</br>
+			<div class="item">
+				<div class="item-header line">
+					<h1 class="item-name">Push Up Sensor and Tracking React Native App</h1>
+				</div>
+				<div class="item-note">
+					<h1>React Native mobile app which automatically detects, tracks, and counts push ups in real-time through device hardware proximity sensors.</h1>
+				</div>
+				<h1 class="item-tags">Published on Google Play • React Native • Android • iPhone</h1>
+			</div>
+			</br>
+			<div class="item">
+				<div class="item-header line">
+					<h1 class="item-name">iPhone Photo-Sharing Platform </h1>
+				</div>
+				<div class="item-note">
+					<h1>iPhone app which takes user uploaded images and posts them to a custom-built online user platform, similar to Instagram.</h1>
+				</div>
+				<h1 class="item-tags">Swift iOS • Parse • Heroku • Xcode</h1>
+			</div>
+			</br>
+			<div class="item">
+				<div class="item-header line">
+					<h1 class="item-name"><span style="font-weight:500;">10+ mobile apps, 5+ websites, 6+ programs and more projects at </span><a href="github/index.html" target="_blank">willx.org/github!</a></h1>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class='section-container'>
-		<div class='section-left'>
-			<h1 style="padding-top: 10px;">THINGS I HAVE MADE &nbsp;</h1>
-			<h1 class='emoji' style="font-size: 40px;">🤖</h1>
-		</div>
-		<div class='section-right'>
-			<div class='section-data'>
-				<div class="work-container">
-					<div class="work-main">
-						<h1 class="company">Message Bot </h1>
-					</div>
-					<h3 class="description" style="font-family: Cloud; font-size: 1.07em">Python bot which increases online engagement with recruiters by over 500% through the automatic delivery of personalized LinkedIn messages.</h3>
-					<h1 class="languages" style="font-family: Courier">Python · Selenium · BeautifulSoup</h1>
-				</div>
-				<div class="work-container">
-					<div class="work-main">
-						<h1 class="company">Control Computers With LEAP Motion Hand-Tracking</h1>
-					</div>
-					<h3 class="description" style="font-family: Cloud; font-size: 1.07em">Java program which allows users to control a computer by gesturing their hands in the air.</h3>
-					<h1 class="languages" style="font-family: Courier">Java · LEAP Motion</h1>
-				</div>
-				<div class="work-container">
-					<div class="work-main">
-						<h1 class="company">Alexa, Teach Me a Language</h1>
-					</div>
-					<h3 class="description" style="font-family: Cloud; font-size: 1.07em">Amazon Alexa Skill which turns an Alexa device into a language learning tool by leveraging Alexa's multi-language, voice recognition capabilities.</h3>
-					<h1 class="languages" style="font-family: Courier">Java · LEAP Motion</h1>
-				</div>
-				<div class="work-container">
-					<div class="work-main">
-						<h1 class="company">Zero-Cost Automated Stock Trading API</h1>
-					</div>
-					<h3 class="description" style="font-family: Cloud; font-size: 1.07em">JavaScript API which eliminates the overhead cost of automated stock trading by incoporating the Robinhood commission-free trading platform.</h3>
-					<h1 class="languages" style="font-family: Courier">Javascript · Robinhood API</h1>
-				</div>
-				<div class="work-container">
-					<div class="work-main">
-						<h1 class="company">Full-Stack React.js and Google Firebase Snapchat Client</h1>
-					</div>
-					<h3 class="description" style="font-family: Cloud; font-size: 1.07em">React.js and Google Firebase website designed to send and receive single-view images in real-time for desktop and mobile web clients.</h3>
-					<h1 class="languages" style="font-family: Courier">React.js · Firebase · Full-Stack</h1>
-				</div>
-				<div class="work-container">
-					<div class="work-main">
-						<h1 class="company">Sink or Swim: Read & Publish Reviews for Political Candidates</h1>
-					</div>
-					<h3 class="description" style="font-family: Cloud; font-size: 1.07em">Comprehensively inform voters by centralizing a political-candidates reviews & ratings in website incorporating journalist reviews from the full  spectrum of political news sources.</h3>
-					<h1 class="languages" style="font-family: Courier">React.js · Parse · Full-Stack</h1>
-				</div>
-				<div class="work-container">
-					<div class="work-main">
-						<h1 class="company">Push Up Sensor and Tracking React Native App</h1>
-					</div>
-					<h3 class="description" style="font-family: Cloud; font-size: 1.07em">React Native mobile app which automatically detects and tracks push ups in real-time by utilizing device hardware proximity sensors.</h3>
-					<h1 class="languages" style="font-family: Courier">Published on Google Play · React Native</h1>
-				</div>
-				<div class="work-container">
-					<div class="work-main">
-						<h1 class="company">iOS - Twitter App Clone</h1>
-					</div>
-					<h3 class="description" style="font-family: Cloud; font-size: 1.07em">Created an iPhone Twitter clone by employing the official Twitter API to validate users, retrieve Tweet feeds, post user-created Tweets, view user profiles and perform the native Twitter features of liking, retweeting, and replying.</h3>
-					<h1 class="languages" style="font-family: Courier">iOS · Twitter API</h1>
-				</div>
-				<div class="work-container">
-					<div class="work-main">
-						<h1 class="company">Photo Sharing iPhone App</h1>
-					</div>
-					<h3 class="description" style="font-family: Cloud; font-size: 1.07em">Custom full-stack iPhone app based on Instagram that shares images from the device camera feed to other users in a real-time online platform.</h3>
-					<h1 class="languages" style="font-family: Courier">Swift iOS · Parse · Heroku</h1>
-				</div>
-				<div class="work-container">
-					<div class="work-main">
-						<h1 class="company">iOS - Full Stack Real-Time Reservations App</h1>
-					</div>
-					<h3 class="description" style="font-family: Cloud; font-size: 1.07em">Centralized the scheduling and reserving of shared-account access through a Heroku-hosted, NoSQL backend scheduling system and an iPhone app featuring user-lookup, advanced account management, and a custom UI.</h3>
-					<h1 class="languages" style="font-family: Courier">Swift iOS · Parse · Heroku</h1>
-				</div>
-				<div class="work-container">
-					<h3 class="description" style="font-family: Cloud; font-size: 1.07em"><i class="fab fa-github-square"></i> 10+ mobile apps, 5+ websites, 6+ programs and more projects at <a href="https://willx.org/github"><u>willx.org/github</u></a>!</h3>
-				</div>
+
+	<div class="content pane" id="contact-pane">
+		<div class="content-left">
+			<div class="header line">
+				<h1>CONTACT&nbsp;</h1>
+				<h1 class="header-emoji">🔗</h1>
 			</div>
 		</div>
-	</div>
-	<div class='section-container' id="contact">
-		<div class='section-left'>
-			<h1 style="padding-top: 10px;">THINGS I AM ALSO ON &nbsp;</h1>
-			<h1 class='emoji' style="font-size: 40px;">🔗</h1>
-		</div>
-		<div class='section-right'>
-			<div class='section-data'>
-				<ul class="links">
-					<a href="https://willx.org/linkedin" target="_blank" class="btn draw-border other-links" style="margin-right: 20px;"><i class="fab fa-linkedin"></i>linkedin</a>
-					<a href="https://willx.org/github" target="_blank" class="btn draw-border other-links" style="margin-right: 20px;"><i class="fab fa-github-square"></i>github</a>
-					<a href="mailto:will@willx.org" target="_blank" class="btn draw-border other-links" style="margin-right: 20px;"><i class="fas fa-envelope-square"></i>email</a>
-				</ul>
-			</div>
+		<div class="content-right line contact-line">
+			<a class="contact-button button draw-border" href="linkedin/index.html" target="_blank"><span class="contact-emoji">💼&nbsp;</span><span>LinkedIn</span></a>
+			<a class="contact-button button draw-border" href="github/index.html" target="_blank"><span class="contact-emoji">💻&nbsp;</span><span>GitHub</span></a>
+			<a class="contact-button button draw-border" href="mailto:will@willx.org" target="_blank"><span class="contact-emoji">✉️&nbsp;</span><span>Email</span></a>
 		</div>
 	</div>
-	<div class='footer-container'>
-		<span style="color: #ddd">William X. Last update: Dec. 2, 2018</span>
+
+	<div class="content pane">
+		<div class="content-left">
+		</div>
+		<div class="content-right line">
+			<h6 style="color: #bbb">Last edited 1/17.</h6>
+		</div>
 	</div>
-<script src="script.js"></script>
+
+	<script src="typer.js"></script>
 </body>
 </html>
